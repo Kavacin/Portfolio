@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>Kav</span>acin</a>
+        <nav class="navbar">
+            <a href="#" class="active" id="portfolioLink">Portfolio</a>
+        
+            <a href="#" id="experienceLink">Experience</a>
+            <a href="#" id="projectsLink">Projects</a>
+            <a href="#" id="educationLink">Education</a>
+            <a href="#" id="contactLink">Contact</a>
+        </nav>
+        <a href="#" class="contact" id="contactLink">Contact Me</a>
+    </header>
+
+    <section class="home" id="portfolioSection"> 
+        <div class="home-content">
+             <h3>Hi</h3>
+             <h1>I'm <span>Kavacin</span><br>a Web Developer</h1>
+            <p>Confident Student passionate about learning new skills.
+                Ambitious and driven individual ready and willing to work hard and learn from professionals.
+                Brings outstanding computer and communication skills.</p>
+                <div class="btn-box">
+                    <button class="btn-1">SKILLS</button>
+                
+                    <div class="skills-box" id="skills-box">
+                    <strong >-Front-End Skills:</strong> Html, CSS, JavaScript, React<br>
+                    <strong >-Computer Network</strong><br>
+                    <strong >-Operating Systems</strong><br>
+                    <strong >-Programming Language:</strong> C++, C, JAVA<br>
+                    <strong >-Cyber Security tools</strong><br>
+                    <strong>-Cloud Computing</strong><br>
+                    <strong >-DBMS</strong>
+                </div>
+                </div>
+            
+                <script>
+                    function toggleSkills() {
+                        var skillsBox = document.getElementById("skills-box");
+                        if (skillsBox.classList.contains("active")) {
+                            skillsBox.classList.remove("active");
+                        } else {
+                            skillsBox.classList.add("active");
+                        }
+                    }
+                </script>
+        </div>
+        <div class="img-box">
+            <img src="C:\Users\User\OneDrive\Desktop\portfolio-dsce\kav-new.jpg" alt="">
+        </div>
+    </section>
+    <div class="cont">
+        <button id="downloadResumeBtn" >
+            <a href="M_KAVACIN_resume.docx" style="color: black;">DOWNLOAD RESUME</a>
+        </button>
+    </div>
+    <script>
+        document.getElementById('downloadResumeBtn').addEventListener('click', function () {
+            const link = document.createElement('a');
+            link.href = 'C:\Users\User\OneDrive\Desktop\portfolio-dsce\M_KAVACIN_resume.docx'; // Replace with the actual URL to your resume file
+            link.download = 'kavacin_Resume.pdf'; // Replace with the desired file name
+            link.click();
+        });
+    </script>
+
+    <section class="about" id="aboutSection">
+        <div class="about-img">
+            <img src="C:\Users\User\OneDrive\Desktop\portfolio-dsce\kavs-sit.jpg" alt="">
+        </div>
+        <div class="about-content">
+            <h2 class="heading">About <span>me</span></h2>
+            <h3>A <span>Web</span> <span>Developer</span></h3>
+            <p> Iam a dedicated and passionate web developer.
+                With a strong foundation in both front-end and back-end technologies,
+                I have successfully developed and deployed several web projects.
+                My focus is on creating responsive, user-friendly, and efficient web applications.
+                I am always eager to learn new technologies and enhance my skills, 
+                aiming to contribute effectively to the tech industry.
+                C:\Users\User\OneDrive\Desktop\portfolio-dsce\kavs-sit.jpg  </p>
+            
+            <p style="color: aliceblue ;text-align:right ;">(--scroll down--)</p>
+        
+        </div>
+    </section>
+
+
+
+    <!-- Contact Section -->
+    <section class="contact" id="contactSection" style="display:none;">
+        <h2>Contact Me</h2>
+        <p>Phone: 9019969885</p>
+        <p>EmailId: kavacin14@gmail.com</p>
+        <p>.</p>
+        <p>.</p>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education" id="educationSection" style="display:none;">
+        <h2>Education</h2>
+        <p>Dayananda Sagar College of Engineering 
+        </p><p><span>(BE Computer Science and Engineering)
+            <p>.</p>
+        </span></p>
+
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projectsSection" style="display:none;">
+        <h2>Projects</h2>
+        <ul>
+            <li><p style="color: blue ;">E-commerce website:</p> Developed using HTML, CSS, JavaScript, mongoDB and deployed it in the cloud.</li>
+            <li><p style="color: blue ;">User-friendly interface:</p> Developed Summarization tool which converts Audio or big paragraphs and summarizes it for easy understanding.</li>
+        </ul>
+    </section>
+    <section class="experience" id="experienceSection" style="display:none;">
+        <h2>Experience</h2>
+
+        <h3>Achievements:</h3>
+        <ul>
+            <li>-Participated in a 3-day SAP Young Startup event in partnership with Research Engagement and
+                 collaboration hub by SAP Labs India, where we addressed "Hostel Life Insecurities with a focus on
+                 ragging. I contributed to developing an AI-based solution and presenting it through a skit.</li>
+            <li>-SAP Startup Studio: Our team received special appreciation from the SAP team for our innovative approach
+                 and impactful solution.</li>
+            <li>-Completed AWS Cloud Practitioner Training: Successfully completed a training program for AWS Cloud
+                 Practitioner organized by Cloud Institutions.</li>
+        </ul>
+
+    </section>
+    
+    <footer class="footer">
+        <div class="social-icons">
+            <a href="https://www.instagram.com/kavacin_.14?igsh=M2RkODh0bTYzb3Vq" target="_blank">
+                <i class='bx bxl-instagram'></i>
+            </a>
+            <a href="https://www.linkedin.com/in/m-kavacin-0899a9241" target="_blank">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+            <a href="https://github.com/Kavacin" target="_blank">
+                <i class='bx bxl-github'></i>
+            </a>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
